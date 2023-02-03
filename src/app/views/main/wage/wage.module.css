@@ -1,0 +1,287 @@
+.flex_no_center {
+    display: flex;
+    align-items: center;
+}
+
+.flex {}
+
+.wage-header h4 {
+    color: #303E65;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.wage-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wage-select_moth {
+    width: 300px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.wage-select_moth p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+
+}
+
+.wage-create-payroll {
+    background: #2D9CDB;
+    border-radius: 8px;
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.wage-create-payroll p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.iconPlus {
+    color: #fff;
+}
+
+.show_select_time {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: 0.3s ease;
+    display: none;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.wage-select_moth:hover .show_select_time {
+    transition: 0.3s ease;
+    display: block;
+}
+
+.wage-select_moth:hover {
+    box-shadow: 0px 0px 10px #2D9CDB;
+
+}
+
+.list-table {
+    margin-top: 30px;
+}
+
+.table-list_name {
+    color: #2D9CDB;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.icon-back {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.title h4 {
+    padding: 0;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #303E65;
+}
+
+.button-export {
+    background: #2D9CDB;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wage-detatil_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-export_text {
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.icon-export {
+    font-size: 16px;
+    color: #fff;
+}
+
+.table-list_text {
+    font-weight: 600;
+}
+
+.title-button {
+    margin-top: 30px;
+    display: flex;
+}
+
+.title-bl,
+.title-ct {
+    border-radius: 15px 15px 0px 0px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+
+
+.title-bl p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #A8A8A8;
+}
+
+.title-ct p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #A8A8A8;
+}
+
+.title-bl-active {
+    background: rgba(45, 156, 219, 0.1);
+    border-bottom: 1px solid #2D9CDB;
+
+}
+
+
+.title-bl-active p {
+    color: #2D9CDB;
+    font-weight: 500;
+}
+
+.detail-bl {
+    margin-top: 40px;
+}
+
+.detail-bl h4 {
+    font-weight: 500;
+    font-size: 20;
+}
+
+.detail-list {
+    background: #EDF2F7;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px 50px;
+}
+
+.detail-list p {
+    font-size: 16px;
+}
+
+@media (min-width:1024px) {}
+
+/* pc*/
+
+@media (width:1024px) {}
+
+/* taplet */
+
+@media (min-width:739px) and (max-width:1023px) {
+    .title h4 {
+        font-size: 18px;
+    }
+
+    .icon-back {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .button-export {
+        padding: 5px 10px;
+    }
+
+    .button-export_text {
+        font-size: 12px;
+    }
+
+    .title-bl,
+    .title-ct {
+        padding: 10px 15px;
+    }
+
+    .title-bl p,
+    .title-ct p {
+        font-size: 15px;
+    }
+}
+
+/* mobele plus */
+
+@media (min-width:539px) and (max-width:739px) {
+    .title h4 {
+        font-size: 18px;
+    }
+
+}
+
+/* mobile */
+
+@media (max-width:538px) {
+    .wage-header h4 {
+        font-size: 16px;
+    }
+
+    .wage-select_moth {
+        width: 180px;
+    }
+
+    .wage-select_moth p {
+        font-size: 14px;
+    }
+
+    .wage-create-payroll {
+        width: 130px;
+    }
+
+    .wage-create-payroll p {
+        font-size: 12px;
+    }
+
+}

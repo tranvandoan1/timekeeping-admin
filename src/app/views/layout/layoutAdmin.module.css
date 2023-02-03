@@ -1,0 +1,158 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layout_main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #EDF2F7;
+    overflow: hidden;
+}
+
+.language {
+    margin-top: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+}
+
+.showSelectLanguage {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 110px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #8bc3ff;
+}
+
+.title_language:hover {
+    background-color: #E4F1FF;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: 16px;
+
+}
+
+.dashboard {
+    text-decoration: none;
+    background-color: #324C6D;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 11px 0;
+}
+
+.icon_menu_reponsive {
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.icon_menu_reponsive:active {
+    box-shadow: 0 0 7px #fff;
+
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconLoading {
+    font-size: 50px;
+    color: #fff;
+}
+
+@media (min-width:1024px) {}
+
+/* pc*/
+
+@media (width:1024px) {}
+
+/* taplet */
+
+@media (min-width:739px) and (max-width:1023px) {
+    .header {
+        padding: 0px 10px !important;
+        line-height: 61px !important;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* mobele plus */
+
+@media (min-width:539px) and (max-width:739px) {
+    .header {
+        padding: 0px 10px !important;
+        line-height: 61px !important;
+    }
+}
+
+/* mobile */
+
+@media (max-width:538px) {
+    .header {
+        padding: 0px 10px !important;
+        line-height: 61px !important;
+    }
+
+    .logo {
+        width: 33px;
+        height: 33px;
+    }
+
+    .name_web {
+        font-size: 18px;
+    }
+}

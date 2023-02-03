@@ -1,0 +1,362 @@
+.title_text {
+  color: #303e65;
+  line-height: 34px;
+  font-weight: 700;
+}
+.input_search {
+  width: 100%;
+  padding: 8px 15px;
+  color: #919191;
+  line-height: 17px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e4ecff;
+  margin-top: 14px;
+}
+
+.input_search:focus {
+  outline: 1px solid #e4ecff;
+}
+
+.view_between {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a8a8a8;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 100px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid #1ecc78;
+  background-color: #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1ecc78;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button {
+  background-color: #2d9cdb;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.buttons {
+  border: none;
+  margin-top: 48px;
+  color: #2d9cdb;
+  line-height: 17px;
+}
+.buttons:focus {
+  outline: none;
+}
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  color: #ffffff !important;
+}
+
+.input {
+  padding: 8px 15px;
+  color: #8e8e8e;
+  font-weight: 700;
+  line-height: 19px;
+}
+.inputs {
+  padding: 8px 15px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.view_time_start {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e4ecff;
+  border-radius: 15px;
+}
+.time_start {
+  border-right: 1px solid #e4ecff;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.time_start:hover {
+  cursor: pointer;
+}
+
+.time_start_minute {
+  border-left: 1px solid #e4ecff;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.time_start_minute:hover {
+  cursor: pointer;
+}
+.time_connect {
+  width: 20%;
+  text-align: center;
+}
+
+.text_span_time {
+  width: 45%;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.text_button {
+  color: #2d9cdb;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.text_button:hover {
+  cursor: pointer;
+}
+.view_time_picker {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+}
+.view_time_picker_end {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 60%;
+  transition: 0.3s ease-in;
+}
+.scroll_time {
+  height: 80px;
+  overflow-y: hidden;
+  width: 50%;
+  border-radius: 4px;
+  list-style: none;
+  overflow-x: hidden;
+  background-color: rgba(5, 5, 5, 0.06);
+}
+.scroll_time:hover {
+  overflow-y: scroll;
+  transition: overflow 0.6s;
+}
+
+.view_text_time:hover {
+  background-color: #e6f4ff;
+  cursor: pointer;
+}
+
+.view_text_time_end {
+  margin-left: 60%;
+}
+
+.view_time_check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: "center"; */
+  /* background-color: #000000; */
+}
+
+@media only screen and (max-width: 1000px) {
+  .view_time_check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title_text {
+    font-size: 10px;
+  }
+  .input_search {
+    font-size: 7px;
+  }
+  .container {
+    font-size: 10px;
+  }
+  .buttons {
+    font-size: 7px;
+  }
+  .text_span_time {
+    font-size: 7px;
+  }
+  .text_button {
+    font-size: 7px;
+  }
+  .input {
+    font-size: 7px;
+  }
+  .inputs {
+    font-size: 7px;
+  }
+  .time_connect {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .title_text {
+    font-size: 14px;
+  }
+  .input_search {
+    font-size: 9px;
+  }
+  .buttons {
+    font-size: 9px;
+  }
+  .container {
+    font-size: 14px;
+  }
+  .input {
+    font-size: 9px;
+  }
+  .inputs {
+    font-size: 9px;
+  }
+  .text_span_time {
+    font-size: 9px;
+  }
+  .text_button {
+    font-size: 9px;
+  }
+  .time_connect {
+    font-size: 9px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .title_text {
+    font-size: 16px;
+  }
+  .input_search {
+    font-size: 11px;
+  }
+  .buttons {
+    font-size: 11px;
+  }
+  .input {
+    font-size: 11px;
+  }
+  .inputs {
+    font-size: 11px;
+  }
+  .container {
+    font-size: 16px;
+  }
+  .text_span_time {
+    font-size: 11px;
+  }
+  .text_button {
+    font-size: 11px;
+  }
+  .time_connect {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .title_text {
+    font-size: 20px;
+  }
+  .input_search {
+    font-size: 13px;
+  }
+  .buttons {
+    font-size: 13px;
+  }
+  .input {
+    font-size: 13px;
+  }
+  .inputs {
+    font-size: 13px;
+  }
+  .container {
+    font-size: 20px;
+  }
+  .text_span_time {
+    font-size: 13px;
+  }
+  .text_button {
+    font-size: 13px;
+  }
+  .time_connect {
+    font-size: 13px;
+  }
+}

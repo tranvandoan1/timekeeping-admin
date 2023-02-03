@@ -1,0 +1,159 @@
+.title_text {
+  color: #303e65;
+  line-height: 34px;
+  font-weight: 700;
+}
+.view_flex_item_center {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.text_span {
+  color: #000000;
+  line-height: 16px;
+  font-weight: 700;
+  min-width: 60px;
+}
+
+.view_button {
+  display: flex;
+  justify-content: end;
+  margin-top: 44px;
+}
+
+.button_cancel {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 25%;
+  max-width: 100px;
+  justify-content: center;
+  color: #acb2c1;
+  border: 1px solid #acb2c1;
+  margin-right: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.button_cancel:focus {
+  outline: none;
+}
+
+.button_accept {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 25%;
+  max-width: 100px;
+  background-color: #2d9cdb;
+  justify-content: center;
+  border-radius: 8px;
+}
+.button_accept:hover {
+  color: #ffffff !important;
+}
+.button_accept:focus {
+  outline: none;
+}
+
+.view_textarea {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+
+.textarea {
+  border-radius: 15px;
+  background-color: #edf2f7;
+  margin-left: 10px;
+  width: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+  .title_text {
+    font-size: 10px;
+  }
+  .text_span {
+    font-size: 7px;
+  }
+  .text_time {
+    font-size: 10px;
+  }
+  .container {
+    font-size: 7px;
+  }
+  .button_accept {
+    font-size: 10px;
+  }
+  .button_cancel {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .title_text {
+    font-size: 14px;
+  }
+  .text_span {
+    font-size: 9px;
+  }
+  .container {
+    font-size: 9px;
+  }
+  .text_time {
+    font-size: 14px;
+  }
+  .button_accept {
+    font-size: 14px;
+  }
+  .button_cancel {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .title_text {
+    font-size: 16px;
+  }
+  .text_span {
+    font-size: 11px;
+  }
+  .container {
+    font-size: 11px;
+  }
+  .text_time {
+    font-size: 16px;
+  }
+  .button_accept {
+    font-size: 16px;
+  }
+  .button_cancel {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .title_text {
+    font-size: 20px;
+  }
+  .text_span {
+    font-size: 13px;
+  }
+  .container {
+    font-size: 13px;
+  }
+  .text_time {
+    font-size: 18px;
+  }
+  .button_accept {
+    font-size: 16px;
+  }
+  .button_cancel {
+    font-size: 16px;
+  }
+}

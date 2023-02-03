@@ -1,0 +1,209 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_no_center {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700px;
+    color: #303E65;
+}
+
+.icon-back {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #2E3A59;
+}
+
+.input-search,
+.input-select_time-left {
+    font-size: 14px;
+    border: 1px solid #E4ECFF;
+    border-radius: 8px;
+    outline: none;
+    width: 187px;
+    height: 40px;
+}
+
+.input {
+    position: relative;
+    overflow: hidden;
+    width: 187px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.icon-search {
+    position: absolute;
+    right: 10px;
+    color: #E4ECFF;
+    font-size: 20px;
+}
+
+.input-select_time-left {
+    border-radius: 10px 0 0 10px;
+    width: 87px;
+}
+
+.input-select_time-right {
+    border-radius: 0 10px 10px 0;
+    width: 87px;
+    height: 40px;
+    border: 1px solid #E4ECFF;
+}
+
+.dd {
+    width: 60px;
+    text-align: center;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: #E4ECFF;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2D9CDB;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.button-export,
+.button-create {
+    background-color: #2D9CDB;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.button-export_text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.button-create {
+    margin-left: 33px;
+    border-radius: 8px;
+}
+
+.button-create_text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+
+}
+
+.button-edit,.button-edit-reponsive {
+    color: #2D9CDB;
+    font-size: 15px;
+    background: #FFFFFF;
+    border: 1px solid #2D9CDB;
+    border-radius: 8px;
+    padding: 3px 5px;
+    cursor: pointer;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.button-edit>button,.button-edit-reponsive>button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: #2D9CDB;
+}
+
+.button-edit:active,.button-edit-reponsive:active {
+    box-shadow: 0 0 5px #2d9cdb;
+
+}
+
+.button-delete,.button-delete-reponsive {
+    color: #fff;
+    font-size: 15px;
+    background: #FF0E39;
+    border-radius: 8px;
+    padding: 3px 5px;
+    cursor: pointer;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.button-delete>button,.button-delete-reponsive>button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+.button-delete:active,.button-delete-reponsive:active {
+    box-shadow: 0 0 5px #2d9cdb;
+
+}
+.button-delete-reponsive,.button-edit-reponsive{
+    padding: 1px 2px !important;
+}
+.button-delete-reponsive{
+    margin-top: 10px;
+}
+
+@media (min-width:1024px) {}
+
+/* pc*/
+
+@media (width:1024px) {}
+
+/* taplet */
+
+@media (min-width:739px) and (max-width:1023px) {}
+
+/* mobele plus */
+
+@media (min-width:539px) and (max-width:739px) {}
+
+/* mobile */
+
+@media (max-width:538px) {
+    .title {
+        font-size: 18px;
+    }
+    .icon-back{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .flex-mobile{
+        display: block;
+    }
+    .input-select_time-left,.input-select_time-right{
+        width: 50px ;
+    }
+    .flex_no_center-mobile{
+        margin-bottom: 20px;
+        justify-content: flex-end;
+    }
+ 
+}

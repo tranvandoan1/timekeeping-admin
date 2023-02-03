@@ -1,0 +1,265 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_no_content {
+    display: flex;
+    align-items: center;
+}
+
+.ronggg {
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.time {
+
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.table {
+    margin-top: 20px;
+    color: #000;
+}
+
+.table::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.table-tr,
+.tbody-tr {
+    display: grid;
+}
+
+.thead .thead_th {
+    font-weight: 400 !important;
+    border: 1px solid #e4e4e4;
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.thead .thead_th1 {
+    font-weight: 400 !important;
+    border: 1px solid #e4e4e4;
+    font-size: 17px;
+    text-align: center;
+}
+.thead_th1 p{
+    padding: 0;
+    margin: 0;
+}
+.tbody td {
+    border: 0.5px solid #e4e4e4;
+    font-size: 17px;
+    padding: 4px;
+}
+
+
+.show_select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(56, 212, 106, 0.71);
+    border-radius: 5px;
+    z-index: 10;
+    transform: scale(0, 0);
+    transition: 0.2s ease-in;
+}
+
+.custom_td2:hover .show_select-active2,
+.custom_td1:hover .show_select-active1 {
+    z-index: 10;
+    transform: scale(1, 1);
+    transition: 0.2s ease-in;
+}
+
+.mockup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon_eye,
+.icon_dots {
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.icon_eye:active,
+.icon_dots:active {
+    box-shadow: 0 0 5px #2d9cdb;
+}
+
+.title_time_keeping {
+    font-weight: 600;
+    font-size: 14px;
+    color: #303E65;
+    padding: 0;
+    margin: 0;
+}
+
+.list_status {
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.list_status8 {
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.filter1:hover .title_select {
+    box-shadow: 0 0 10px #2d9cdb;
+    transition: 0.3s ease-in !important;
+    width: 256px !important;
+}
+
+.filter1:hover .show_select_time {
+    display: block;
+    transition: 0.3s ease-in !important;
+    width: 256px !important;
+}
+
+.filter2:hover .title_select,
+.filter3:hover .title_select {
+    transition: 0.3s ease-in;
+    box-shadow: 0 0 10px #2d9cdb;
+}
+
+.filter2:hover .show_select_time,
+.filter3:hover .show_select_timekeeping {
+    display: block;
+    transition: 0.3s ease-in;
+}
+
+.tbody-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {}
+
+/* pc*/
+
+@media (width: 1024px) {
+
+
+    .thead_th {
+        font-size: 13px !important;
+    }
+
+    .tbody td {
+        font-size: 13px;
+    }
+
+
+    .flex_no_content>span {
+        font-size: 10px;
+    }
+
+
+}
+
+/* taplet */
+
+@media (min-width: 739px) and (max-width: 1023px) {
+
+    .thead_th {
+        font-size: 13px !important;
+    }
+
+    .tbody td {
+        font-size: 13px;
+    }
+
+
+    .flex_no_content>span {
+        font-size: 10px;
+    }
+
+
+    .table {
+        width: 1200px;
+    }
+
+
+}
+
+/* mobele plus */
+
+@media (min-width: 539px) and (max-width: 739px) {
+
+    .thead_th {
+        font-size: 13px !important;
+        padding: 5px 0px;
+    }
+
+    .tbody td {
+        font-size: 13px;
+    }
+
+
+    .table {
+        width: 1200px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 538px) {
+
+
+    .thead_th {
+        font-size: 13px !important;
+        padding: 5px 0px;
+    }
+
+    .tbody td {
+        font-size: 13px;
+    }
+
+
+    .table {
+        width: 1200px;
+    }
+}

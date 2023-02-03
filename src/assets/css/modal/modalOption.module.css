@@ -1,0 +1,206 @@
+.title_text {
+  color: #303e65;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+
+.div_view_center {
+  display: flex;
+}
+.text_p {
+  color: #000000;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.border_div_time {
+  width: 100%;
+  border-radius: 15px;
+  height: 37px;
+  border: 1px solid #e4ecff;
+  display: flex;
+  align-items: center;
+}
+.text_time {
+  line-height: 23px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.div_center_text_time {
+  display: flex;
+  margin-left: 27px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  margin-right: 27px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.center_text_time {
+  display: flex;
+  width: 80%;
+  height: 23px;
+  justify-content: space-between;
+}
+
+.border_div_time:focus {
+  outline: none;
+}
+.option {
+  height: 60px;
+}
+
+.onclick_icon {
+  /* background-color: red; */
+  width: 20px;
+  height: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #000000;
+  line-height: 15px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid #1ecc78;
+  background-color: #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1ecc78;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.div_button {
+  display: flex;
+  justify-content: end;
+  padding: 30px 0px 10px 0px;
+}
+
+.button {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2d9cdb;
+  background-color: #2d9cdb;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.button:hover {
+  color: #ffffff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .title_text {
+    font-size: 10px;
+  }
+  .text_p {
+    font-size: 7px;
+  }
+  .text_time {
+    font-size: 10px;
+  }
+  .container {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .title_text {
+    font-size: 14px;
+  }
+  .text_p {
+    font-size: 9px;
+  }
+  .container {
+    font-size: 9px;
+  }
+  .text_time {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .title_text {
+    font-size: 16px;
+  }
+  .text_p {
+    font-size: 11px;
+  }
+  .container {
+    font-size: 11px;
+  }
+  .text_time {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .title_text {
+    font-size: 20px;
+  }
+  .text_p {
+    font-size: 13px;
+  }
+  .container {
+    font-size: 13px;
+  }
+  .text_time {
+    font-size: 20px;
+  }
+}

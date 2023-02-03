@@ -1,0 +1,465 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_no_center {
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    color: #303e65;
+}
+
+.title_create {
+    padding: 0 20px;
+    background-color: #2d9cdb;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.mockup_create {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    display: none;
+    padding-top: 20px;
+}
+
+.mockup_create>div {
+    background: #ffffff;
+    width: 150px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.mockup_create>div>span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.mockup_create>div>span:hover {
+    background-color: #e4f1ff;
+    color: #000000;
+}
+
+.title_create-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.input {
+    position: relative;
+    overflow: hidden;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.input-search {
+    font-size: 14px;
+    border: 1px solid #a8a8a8;
+    border-radius: 15px;
+    outline: none;
+    width: inherit;
+    height: inherit;
+    padding-left: 40px;
+}
+
+.icon-search {
+    position: absolute;
+    left: 10px;
+    color: #a8a8a8;
+    font-size: 16px;
+}
+
+.input-select_time-left {
+    border-radius: 10px 0 0 10px;
+    width: 87px;
+}
+
+.button-select,
+.button-select-time {
+    width: 20%;
+    background: #f5f5f5;
+    border-radius: 15px;
+    padding: 10px 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    position: relative;
+}
+
+.button-select_left {
+    font-size: 16px;
+}
+
+.button-select_left>span {
+    margin-left: 5px;
+}
+
+.button-select_left-time {
+    color: #000000;
+    font-weight: 400;
+}
+
+.icon_down {
+    color: #2d9cdb;
+}
+
+.button-select-time {
+    width: 25%;
+}
+
+.request-active1 {
+    background: rgba(45, 156, 219, 0.1);
+    border-bottom: 1px solid #2d9cdb;
+    border-radius: 15px 15px 0px 0px;
+    width: 23%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.request-active1>span {
+    font-size: 15px;
+    color: #2d9cdb;
+    font-weight: 500;
+}
+
+.request-active1>span:nth-child(2),
+.request1>span:nth-child(2) {
+    background: rgba(255, 200, 136, 0.33);
+    padding: 2px 10px;
+    border-radius: 100%;
+    color: #ffc888;
+}
+
+.request1,
+.request2,
+.request3 {
+    width: 23%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #838ba3;
+    font-weight: 500;
+}
+
+.request-active2 {
+    background: rgba(45, 156, 219, 0.1);
+    border-bottom: 1px solid #2d9cdb;
+    border-radius: 15px 15px 0px 0px;
+    width: 23%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.request-active2>span {
+    font-size: 15px;
+    color: #2d9cdb;
+    font-weight: 500;
+}
+
+.request-active2>span:nth-child(2),
+.request2>span:nth-child(2) {
+    background: rgba(30, 204, 120, 0.33);
+    padding: 2px 10px;
+    border-radius: 100%;
+    color: #1ecc78;
+}
+
+.request-active3 {
+    background: rgba(45, 156, 219, 0.1);
+    border-bottom: 1px solid #2d9cdb;
+    border-radius: 15px 15px 0px 0px;
+    width: 23%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.request-active3>span {
+    font-size: 15px;
+    color: #2d9cdb;
+    font-weight: 500;
+}
+
+.request-active3>span:nth-child(2),
+.request3>span:nth-child(2) {
+    background: rgba(255, 14, 57, 0.33);
+    padding: 2px 10px;
+    border-radius: 100%;
+    color: #ff0e39;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tx_name {
+    font-weight: 500;
+}
+
+.tx_np {
+    font-size: 11px;
+    color: black;
+    display: block;
+}
+
+.action>button:nth-child(1) {
+    background: #ffffff;
+    border: 1px solid #2d9cdb;
+    border-radius: 8px;
+    color: #2d9cdb;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+
+.action>button:nth-child(3) {
+    background: #2d9cdb;
+    border: 1px solid #2d9cdb;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.tt_text1 span:nth-child(1),
+.tt_text2 span:nth-child(1),
+.tt_text3 span:nth-child(1) {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.tt_text1 span,
+.tt_text2 span,
+.tt_text3 span {
+    font-size: 12px;
+}
+
+.active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.show_modal:hover .mockup_create {
+    display: block;
+}
+
+.mockup_create {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    display: none;
+    padding-top: 25px;
+    z-index: 3;
+}
+
+.mockup_create>div {
+    background: #ffffff;
+    width: 150px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.mockup_create>div>span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.mockup_create>div>span:hover {
+    background-color: #e4f1ff;
+    color: #000000;
+}
+
+.show_mockup_all {
+    position: absolute;
+    width: 90%;
+    height: max-content;
+    z-index: 0;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    padding-top: 5px;
+}
+
+.show_mockup_all_box {
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.icon_all,
+.icon_home,
+.icon_data {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.show_mockup_all .flex_no_center {
+    padding: 10px;
+}
+
+.show_mockup_all .flex_no_center:nth-child(2) {
+    margin: 1px 0;
+}
+
+.show_mockup_all .flex_no_center:nth-child(1):hover,
+.show_mockup_all .flex_no_center:nth-child(2):hover,
+.show_mockup_all .flex_no_center:nth-child(3):hover {
+    background-color: #e4f1ff;
+}
+
+.button-select:hover .show_mockup_all {
+    display: block;
+    z-index: 2;
+}
+
+@media (min-width: 1024px) {}
+
+/* pc*/
+
+@media (width: 1024px) {}
+
+/* taplet */
+
+@media (min-width: 739px) and (max-width: 1023px) {}
+
+/* mobele plus */
+
+@media (min-width: 539px) and (max-width: 739px) {
+    .flex-reponsive {
+        width: 100%;
+    }
+
+    .flex-reponsive h4 {
+        font-size: 20px;
+    }
+
+    .export {
+        display: none;
+    }
+
+    .button-select_request {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .button-select_request .flex {
+        width: 100%;
+    }
+
+    .filter {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button-select {
+        width: 100%;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 538px) {
+    .flex-reponsive {
+        width: 100%;
+    }
+
+    .flex-reponsive h4 {
+        font-size: 16px;
+    }
+
+    .export {
+        display: none;
+    }
+
+    .title_create {
+        padding: 0 10px;
+        background-color: #2d9cdb;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 140px;
+        height: 30px;
+    }
+
+    .title_create-text {
+        font-size: 14px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button-select {
+        width: 100%;
+    }
+
+    .button-select_left span {
+        font-size: 14px;
+    }
+
+    .filter {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .button-select_request {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .button-select_request .flex {
+        width: 100%;
+    }
+
+    .action>button:nth-child(1) {
+        padding: 3px 5px;
+    }
+
+    .action>button:nth-child(3) {
+        padding: 3px 5px;
+    }
+}
